@@ -12,9 +12,10 @@
 
 <body>
     <div class="container">
+
         <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
-                <a class="navbar-brand" href="#">Carousel</a>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
+                <a class="navbar-brand" href="#">Blog de viagens!</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -23,113 +24,161 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
-                        </li>
+
                     </ul>
                     <form class="form-inline mt-2 mt-md-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <input class="form-control mr-sm-2" type="text" placeholder="Procurar" aria-label="Procurar">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
                     </form>
                 </div>
             </nav>
         </header>
     </div>
-    <div class="container">
-        <div class="jumbotron p-4 p-md-5  text-white rounded bg-dark">
-            <div class="col-md-6 px-0">
-                <h1 class="display-4 font-italic">O seu blog de viagem!</h1>
-                <p class="lead my-3">Blog de viagens, dicas, notícias e inspirações para viajar</p>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>O seu blog de viagem!</h5>
+                <p>Blog de viagens, dicas, notícias e inspirações para viajar.</p>
             </div>
-            <div class="col-md-6 px-0">
-                <img src="assets/img/viagem.PNG" alt="daduahd">
-            </div>
-        </div>
-    </div>
+            <div class="carousel-item active">
+                <img src="assets/img/info-calculadora-viagem.jpg" class="d-block w-100" alt="...">
 
-    <div class="row mb-2">
-        <div class="col-md-6">
-            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-primary">Notícias</strong>
-                    <h3 class="mb-0">Coronavírus: Orientações</h3>
-                    <div class="mb-1 text-muted">Nov 20</div>
-                    <p class="card-text mb-auto">As informações mudam todos os dias, o que pode dificultar o acompanhamento dos fatos mais relevantes para você..</p>
-                    <a href="https://www.skyscanner.com.br/noticias/informacoes-coronavirus" class="stretched-link">Continuar lendo</a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/plano-de-viagem.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>O seu blog de viagem!</h5>
+                    <p>Blog de viagens, dicas, notícias e inspirações para viajar.</p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-success">Design</strong>
-                    <h3 class="mb-0">Post title</h3>
-                    <div class="mb-1 text-muted">Nov 11</div>
-                    <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="stretched-link">Continue reading</a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="carousel-item">
+                <img src="assets/img/viagem2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>O seu blog de viagem!</h5>
+                    <p>Blog de viagens, dicas, notícias e inspirações para viajar.</p>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Prefere sol e praia? <span class="text-muted">O nordeste tem isso e muito mais.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="assets/img/nordeste.jpg" alt="Generic placeholder image">
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
-    <hr class="featurette-divider">
 
-    <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Seu sonho é ir para Paris?. <span class="text-muted">Paris tem ótimas razões para ser visitada.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src="assets/img/paris.jpg" alt="Generic placeholder image">
+
+
+    <div class=container>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Notícias</strong>
+                        <h3 class="mb-0">Coronavírus: Orientações</h3>
+                        <div class="mb-1 text-muted">Nov 20</div>
+                        <p class="card-text mb-auto">As informações mudam todos os dias, mas se mantenha informado..</p>
+                        <a href="https://www.skyscanner.com.br/noticias/informacoes-coronavirus" class="stretched-link">Continuar lendo</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Notícias</strong>
+                        <h3 class="mb-0">Black Friday</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">Passagens aéreas em promoção na Black Friday.</p>
+                        <a href="https://www.skyscanner.com.br/noticias/ofertas/ofertas-de-black-friday-e-cyber-monday-brasil" class="stretched-link">Continuar lendo</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class=container>
+        <hr class="featurette-divider">
 
-    <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Prefere sol e praia? <span class="text-muted">O nordeste tem isso e muito mais.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
 
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Gosta de esportes radicais? <span class="text-muted">Nova Zelândia é o lugar.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </p>
+                <a href="#" alt="saiba mais"></a>
+
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="assets/img/nordeste.jpg" alt="Generic placeholder image">
+            </div>
         </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="assets/img/novazelandia.jpg" alt="Generic placeholder image">
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Seu sonho é ir para Paris? <span class="text-muted">Paris tem ótimas razões para ser visitada.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="featurette-image img-fluid mx-auto" src="assets/img/paris.jpg" alt="Generic placeholder image">
+            </div>
         </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Gosta de esportes radicais? <span class="text-muted">Nova Zelândia é o lugar.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="assets/img/novazelandia.jpg" alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
     </div>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
     </div>
     <!-- /.container -->
-
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Mande sua sugestão de viagem!</p>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">E-mail:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Assunto:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+                <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Enviar</a>
+            </div>
+        </div>
+    </div>
     <!-- FOOTER -->
     <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p class="float-right"><a href="index.html">Voltar</a></p>
+        <p>&copy; 2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

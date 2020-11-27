@@ -1,0 +1,13 @@
+#navbar {
+    background-color: orangered;
+    padding: 10px;
+}
+
+.featurette-image {
+    width: 500px;
+    height: 500px;
+}
+
+.row {
+    margin-top: 20px;
+}
